@@ -8,6 +8,7 @@ void main() {
 
   //artimatic operators
   /**ex: penjumlaha, pengurangan dsb */
+  
   //penjumlahan
   var jml = angka1 + angka2;
   //pengurangan
@@ -40,7 +41,7 @@ void main() {
   var b = false;
   //AND(&&) -> false kalo salah satu ada yg false
   print(a && b);
-  //OR(||) -> true kalo salah satunya true
+  //OR(||) -> true kalo salah satunya false
   print(a || b);
   //NOT(!) -> nilai jadi berlawanan
   print(!b);

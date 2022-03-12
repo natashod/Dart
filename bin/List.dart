@@ -3,6 +3,7 @@ void main() {
   //pendeklarasi variable tipe List
   var buah = ['mangga', 'apel', 'nanas'];
   List sayur = ['brokoli', 'kangkung', 'sawi'];
+  List pasar = ['brokoli', 'kangkung', 'sawi'];
   /*make list tapi lebih spesifik*/
   List<String> dapur = ['sayur', 'buah', '11'];
   /*selain tipe data string baka error */

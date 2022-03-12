@@ -1,9 +1,10 @@
 void main() {
   var nama = 'Natasha Amalia Zahra';
-  // bisa diubah nilainya jadi tetap ga dinamik
-  // String nama= 'Natasha Amalia Zahra';
   String daftarBelanja = "Tomat, Sawi, Bayam";
 
+
+  // bisa diubah nilainya jadi tetap ga dinamik
+  // String nama= 'Natasha Amalia Zahra';
   var angka = 20;
   
   //nge print biasa
