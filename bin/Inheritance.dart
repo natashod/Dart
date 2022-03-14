@@ -1,15 +1,14 @@
-import 'dart:ffi';
-
 void main() {
 //bikin objek mobil
   Mobil pajero = new Mobil(roda: 4);
   pajero.Klakson();
   print(pajero.klakson);
   pajero.jumlahRoda(pajero.roda);
+  pajero.berjalan();
 }
 
 //Parent
-class Kendaraan {
+abstract class Kendaraan {
   String klakson = 'tin tin';
 
   // buat nge print suara klaksonnya
@@ -21,6 +20,8 @@ class Kendaraan {
   void jumlahRoda(int roda) {
     print(roda);
   }
+
+  void berjalan();
 }
 
 //Child
@@ -34,6 +35,16 @@ class Mobil extends Kendaraan {
     print('jumlah roda: $roda');
     super.jumlahRoda(roda);
   }
+
+  @override
+  void berjalan() {
+    print('mobil berjalan');
+  }
 }
 
-class Motor extends Kendaraan {}
+class Motor extends Kendaraan {
+  @override
+  void berjalan() {
+    print('motor berjalan');
+  }
+}
